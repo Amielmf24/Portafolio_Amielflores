@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Amiel</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Img.JPG" alt="">
+            </div>
+            <h1>Amiel Martínez</h1>
+            <h2>Ingeniera En Sistemas - Desarrolladora Web</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Amiel Martínez.</span> Soy una Estudiante De La Carrera Ingenieria En Ciencias De La Compuatación, Me gusta mucho crear paginas web, Soy un poco creativa a la hora de crear paginas web, Quiero seguir creando paginas y aprendiendo cada vez mas de ellas. Esta Pagina la cree para que conocieran un poco mas de mi y sobre mis proyectos.</p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            02-04-2004
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +504 9969-1098
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            amielnohemi2@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.http://127.0.0.1:5500/Index.html#.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Res. San Juan, Honduras
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrolladora</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Intereses sobre Mi</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>COMPUTER</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar Datos <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+   
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Portafolio1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Página Diseño web</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Portafolio2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Página Diseño web</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portafolio3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Página Diseño web</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Portafolio4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Página Diseño web</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portafolio5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Página Diseño web</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portafolio6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Página Diseño web</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="img/Portalfolio7.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Página Diseño web</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="galeria">
+                        <div class="proyecto">
+                            <img src="img/portafolio8.jpg" alt="">
+                            <div class="overlay">
+                                <h3>Página Diseño web</h3>
+                                <p>Fotografía</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo electronico">
+                    <input type="text" placeholder="País">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Honduras 504, Res. San Juan
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +504 9969-1098
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: amielnohemi2@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></i></a>
+        </div>
+    </footer>
+
+    <script src="PerfilPortafolio.js"></script>
+</body>
+</html>
