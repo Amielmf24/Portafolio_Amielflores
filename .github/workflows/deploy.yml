@@ -1,4 +1,4 @@
-name: Despliegue de Pagina en Vite a Github Pages
+name: CICD de Vite MPA a Github Pages
 
 on:
   push:
@@ -8,34 +8,39 @@ permissions:
   contents: read
   pages: write
   id-token: write
+env:
+  DEPLOY_BASE_URL: ${{ vars.DEPLOY_BASE_URL}}
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
     environment:
       name: github-pages
       url: ${{ steps.github_pages.outputs.url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Clonar Repositorio
         uses: actions/checkout@v4
-      - name: Setup Node.js
+      - name: Instalar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-      - name: Install Dependencies
+      - name: Instalar Dependencias
         run: npm install
-      - name: Build
+      #- name: QA
+      #  run: npm run test
+      - name: Verificación de Env
+        run: echo "DEPLOY_BASE_URL -> $DEPLOY_BASE_URL"
+      - name: Compilar el Sitio
         run: npm run build
-      - name: Setup de Github Pages
+      - name: Configurar Entorno Github Pages
         uses: actions/configure-pages@v5
-      - name: Upload Dist Folder to Pages
+      - name: Upload del Sitio Compilado
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
-      - name: Deploy to Github pages
+      - name: Publicar el Sitio
         id: deployment
         uses: actions/deploy-pages@v4
